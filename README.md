@@ -1,7 +1,7 @@
 ![Header](https://github.com/NKTKLN/NKTKLN/blob/main/attachments/background.jpg)
 
 ## About me
-I'm a novice programmer from Russia. I'm involved in python development and application android development.
+I'm a programmer from Russia. I'm involved in python development and application android development.
 
 ## Languages and Tools
 ![Python](https://img.shields.io/badge/-Python-black?style=for-the-badge&logo=python)
