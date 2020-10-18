@@ -1,7 +1,7 @@
 ![Header](https://github.com/NKTKLN/NKTKLN/blob/main/attachments/background.jpg)
 
 ## About me
-<h3>I'm a programmer from Russia. I'm involved in python development and application android development.</h3>
+### I'm a programmer from Russia. I'm involved in python development and application android development.
 
 ## Languages and Tools
 <p><a href="https://www.python.org/"><img src="https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg" alt="python" width="30" height="30"/></a>
