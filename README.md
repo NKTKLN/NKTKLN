@@ -14,4 +14,4 @@
 ![NKTKLN github stats](https://github-readme-stats.vercel.app/api?username=NKTKLN&count_private=true)
 
 ## Connect with me
-<a href="https://t.me/NKTKLN"><img src="https://img.icons8.com/fluent/48/000000/telegram-app.png" alt="telegram" width="44" height="44"/></a>
+<a href="https://t.me/NKTKLN"><img src="https://img.icons8.com/fluent/144/000000/telegram-app.png" alt="telegram" width="44" height="44"/></a>
