@@ -11,8 +11,6 @@
 <a href=""><img src="https://devicons.github.io/devicon/devicon.git/icons/linux/linux-original.svg" alt="linux" width="30" height="30"/></a>
 <a href="https://www.mysql.com/"><img src="https://devicons.github.io/devicon/devicon.git/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="30" height="30"/></a></p>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NKTKLN)
-
 ![NKTKLN github stats](https://github-readme-stats.vercel.app/api?username=NKTKLN&count_private=true)
 
 ## Connect with me:
