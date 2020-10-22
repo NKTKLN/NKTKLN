@@ -11,7 +11,7 @@
 <img src="https://devicons.github.io/devicon/devicon.git/icons/linux/linux-original.svg" alt="linux" width="30" height="30"/>
 <a href="https://www.mysql.com/"><img src="https://devicons.github.io/devicon/devicon.git/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="30" height="30"/></a></p>
 
-![NKTKLN github stats](https://github-readme-stats.vercel.app/api?username=NKTKLN & count_private = true & show_icons = true)
+![NKTKLN github stats](https://github-readme-stats.vercel.app/api?username=NKTKLN&count_private=true&show_icons=true)
 
 ## Connect with me
 <a href="https://t.me/NKTKLN"><img src="https://img.icons8.com/fluent/144/000000/telegram-app.png" alt="telegram" width="44" height="44"/></a>
