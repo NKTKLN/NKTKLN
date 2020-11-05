@@ -4,33 +4,13 @@
 ### I'm a programmer from Russia. I'm involved in python development and application android development.
 
 ## Languages and Tools
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      .scale {
-        display: inline-block;
-        overflow: hidden;
-      }
-      .scale img {
-        transition: 1s;
-        display: block;
-      }
-      .scale img:hover {
-        transform: scale(1.08);
-      }
-    </style>
-  </head>
- <body>
-    <p><div class="scale"><a href="https://www.python.org/"><img src="https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg" alt="python" width="30" height="30"/></div></a>
-    <div class="scale"><a href="https://dart.dev/"><img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="30" height="30"/></div></a>
-    <div class="scale"><a href="https://flutter.dev/"><img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="30" height="30"/></div></a>
-    <div class="scale"><a href="https://git-scm.com/"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="30" height="30"/></div></a>
-    <div class="scale"><a href="https://www.docker.com/"><img src="https://devicons.github.io/devicon/devicon.git/icons/docker/docker-original-wordmark.svg" alt="docker" width="30" height="30"/></div></a>
-    <div class="scale"><a href="https://www.linux.org/"><img src="https://devicons.github.io/devicon/devicon.git/icons/linux/linux-original.svg" alt="linux" width="30" height="30"/></div></a>
-    <div class="scale"><a href="https://www.mysql.com/"><img src="https://devicons.github.io/devicon/devicon.git/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="30" height="30"/></a></div></p>
-  </body>
-</html>
+<p><a href="https://www.python.org/"><img src="https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg" alt="python" width="30" height="30"/></a>
+<a href="https://dart.dev/"><img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="30" height="30"/></a>
+<a href="https://flutter.dev/"><img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="30" height="30"/></a>
+<a href="https://git-scm.com/"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="30" height="30"/></a>
+<a href="https://www.docker.com/"><img src="https://devicons.github.io/devicon/devicon.git/icons/docker/docker-original-wordmark.svg" alt="docker" width="30" height="30"/></a>
+<a href="https://www.linux.org/"><img src="https://devicons.github.io/devicon/devicon.git/icons/linux/linux-original.svg" alt="linux" width="30" height="30"/></a>
+<a href="https://www.mysql.com/"><img src="https://devicons.github.io/devicon/devicon.git/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="30" height="30"/></a></p>
 
 ![NKTKLN github stats](https://github-readme-stats.vercel.app/api?username=NKTKLN&count_private=true&show_icons=true)
 
