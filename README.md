@@ -9,7 +9,7 @@
 <a href="https://www.linux.org/"><img src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg" alt="linux" width="30" height="30"/></a>
 <a href="https://www.mysql.com/"><img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" alt="mysql" width="30" height="30"/></a></p>
 
-![NKTKLN github stats](https://github-readme-stats.vercel.app/api?username=NKTKLN&count_private=true&show_icons=true)
+![NKTKLN github stats](https://github-readme-stats.vercel.app/api?username=NKTKLN&count_private=true&show_icons=true&title_color=fff&icon_color=00b7ff&text_color=dbdbdb&bg_color=000000)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NKTKLN&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
