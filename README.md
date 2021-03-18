@@ -9,9 +9,9 @@
 <a href="https://www.linux.org/"><img src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg" alt="linux" width="30" height="30"/></a>
 <a href="https://www.mysql.com/"><img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" alt="mysql" width="30" height="30"/></a></p>
 
-![NKTKLN github stats](https://github-readme-stats.vercel.app/api?username=NKTKLN&count_private=true&show_icons=true&title_color=fff&icon_color=00b7ff&text_color=dbdbdb&bg_color=000000)
+![NKTKLN github stats](https://github-readme-stats.vercel.app/api?username=NKTKLN&count_private=true&show_icons=true)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NKTKLN&layout=compact&bg_color=000000)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NKTKLN&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 ## Connect with me
 <a href="https://t.me/NKTKLN"><img src="https://img.icons8.com/fluent/144/000000/telegram-app.png" alt="telegram" width="44" height="44"/></a>
