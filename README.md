@@ -1,4 +1,4 @@
-![Header](https://github.com/NKTKLN/NKTKLN/blob/main/attachments/background.jpg)
+![Header](https://github.com/NKTKLN/NKTKLN/blob/main/attachments/background.png)
 
 ## About me
 ### I'm Python developer.
