@@ -1,7 +1,5 @@
 ![Header](https://github.com/NKTKLN/NKTKLN/blob/main/attachments/background.png)
 
-## About me
-### I'm Python developer.
 ## Languages and Tools
 <p><a href="https://www.python.org/"><img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="python" width="30" height="30"/></a>
 <a href="https://git-scm.com/"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="30" height="30"/></a>
@@ -16,4 +14,4 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NKTKLN&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 ## Connect with me
-<a href="https://t.me/NKTKLN"><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/telegram.png" alt="telegram" width="100" height="37"/></a>
+<a href="https://t.me/NKTKLN"><img src="https://img.icons8.com/fluent/144/000000/telegram-app.png" alt="telegram" width="44" height="44"/></a>
