@@ -16,4 +16,4 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NKTKLN&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 ## Connect with me
-<a href="https://t.me/NKTKLN"><img src="https://img.icons8.com/fluent/144/000000/telegram-app.png" alt="telegram" width="44" height="44"/></a>
+<a href="https://t.me/NKTKLN"><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/telegram.png" alt="telegram" width="44" height="44"/></a>
