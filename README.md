@@ -1,12 +1,12 @@
 ![Header](https://github.com/NKTKLN/NKTKLN/blob/main/attachments/background.png)
 
 ## Languages and Tools
-<p><a href="https://www.python.org/"><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/icons/python.png" alt="python"/></a>
+<a href="https://www.python.org/"><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/icons/python.png" alt="python"/></a>
 <a href="https://golang.org/"><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/icons/golang.png" alt="golang"/></a>
 <a href="https://git-scm.com/"><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/icons/git.png" alt="git"/></a>
 <a href=""><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/icons/docker.png" alt="docker"/></a>
 <a href="https://www.linux.org/"><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/icons/linux.png" alt="linux"/></a>
-<a href="https://www.sqlite.org/index.html"><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/icons/sqlite.png" alt="sqlite"/></a></p>
+<a href="https://www.sqlite.org/index.html"><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/icons/sqlite.png" alt="sqlite"/></a>
 
 
 ## Stats
