@@ -7,8 +7,8 @@
 <a href=""><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/icons/docker.png" alt="docker"/></a>
 <a href="https://www.linux.org/"><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/icons/linux.png" alt="linux"/></a>
 <a href="https://www.sqlite.org/index.html"><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/icons/sqlite.png" alt="sqlite"/></a>
-<a href="https://www.postgresql.org/"><img src="" alt="potgres"/></a>
-<a href="https://redis.io/"><img src="" alt="redis"/></a>
+<a href="https://www.postgresql.org/"><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/icons/pg.png" alt="potgres"/></a>
+<a href="https://redis.io/"><img src="https://github.com/NKTKLN/NKTKLN/blob/main/attachments/icons/redis.png" alt="redis"/></a>
 
 ## Stats
 
