@@ -1,4 +1,4 @@
-<!-- ![Header](https://github.com/NKTKLN/NKTKLN/blob/main/attachments/background2.png) -->
+![Header](https://github.com/NKTKLN/NKTKLN/blob/main/attachments/background2.png)
 
 ## Languages and tools
 [![My Skills](https://skillicons.dev/icons?i=py,go,ts,git,docker,linux,postgres,redis,react,tailwind)](https://skillicons.dev)
