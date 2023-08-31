@@ -1,5 +1,12 @@
 ![Header](./attachments/banner.png)
 
+# Hi ✋, I'm NKTKLN 💻
+
+* 📚 Self-taught
+* 🏫 Student
+* 🌐 Backend developer
+* 🛠 Now working on self project
+
 ## Skills
 
 [![My Skills](https://skillicons.dev/icons?i=py,go,git,docker,linux,redis,postgres)](https://skillicons.dev)
