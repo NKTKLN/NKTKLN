@@ -1,6 +1,6 @@
 ![Header](./attachments/banner.png)
 
-# Hi ✋, I'm NKTKLN 💻
+# Hi ✋, I'm NKTKLN!
 
 * 📚 Self-taught
 * 🏫 Student
