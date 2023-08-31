@@ -5,7 +5,7 @@
 * 📚 Self-taught
 * 🏫 Student
 * 🌐 Backend developer
-* 🛠 Now working on self project
+* 🛠 Currently working on his own projects
 
 ## Skills
 
