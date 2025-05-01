@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="src/sakura.png" alt="ascii sakura" width="800" />
+  <img src="src/sakura.png" alt="ascii sakura" width="500" />
 </div>
 
 <p align="center">
