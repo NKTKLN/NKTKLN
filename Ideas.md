@@ -74,3 +74,5 @@ $ cat menu.txt
 [2] Blog        → https://blog.example.com  
 [3] Contact     → mailto:you@example.com  
 ```
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F69ABF&vCenter=true&multiline=true&repeat=false&width=800&height=80&lines=Code+is+a+tool+to+build+the+future%2C+one+line+at+a+time.)](https://git.io/typing-svg)
