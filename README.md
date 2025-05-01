@@ -5,6 +5,10 @@
 **Location**: Moscow, Russia  
 **Skills**: TypeScript | Python | React | Neural Interfaces -->
 
+<div align="center">
+  <img src="src/output.png" alt="ascii sakura" width="600" />
+</div>
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:F69ABF,100:EB7FA9&height=3&section=footer"/>
 </p>
@@ -15,9 +19,6 @@
 >Today's idleness will turn into tears tomorrow.
 
 [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=To%20exist%20is%20nothing%20more%20than%20a%20bundle%20of%20memories.)](https://github.com/piyushsuthar/github-readme-quotes)
-
-![t](/tmp/PyBonsai/output.svg)
-
 
 <!-- ```
 ⌬ Name: NKTKLN
