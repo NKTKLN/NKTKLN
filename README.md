@@ -1,17 +1,17 @@
+<div align="center">
+  <img src="src/sakura.png" alt="ascii sakura" width="800" />
+</div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:F69ABF,100:EB7FA9&height=3&section=footer"/>
+</p>
+
 <!-- # 𝕂𝕪𝕠𝕥𝕠 𝕂𝕪𝕓𝕖𝕣𝕡𝕒𝕟𝕜 🚀
 
 👾 **NKTKLN** - ネットワークの住人 (Resident of the Network)  
 **Status**: Online in the Wired  
 **Location**: Moscow, Russia  
 **Skills**: TypeScript | Python | React | Neural Interfaces -->
-
-<div align="center">
-  <img src="src/output.png" alt="ascii sakura" width="600" />
-</div>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:F69ABF,100:EB7FA9&height=3&section=footer"/>
-</p>
 
 ### 「 About me 」
 
