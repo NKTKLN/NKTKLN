@@ -14,6 +14,11 @@
 >[!NOTE] Quote
 >Today's idleness will turn into tears tomorrow.
 
+[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=To%20exist%20is%20nothing%20more%20than%20a%20bundle%20of%20memories.)](https://github.com/piyushsuthar/github-readme-quotes)
+
+![t](/tmp/PyBonsai/output.svg)
+
+
 <!-- ```
 ⌬ Name: NKTKLN
 ⌬ Status: Online in the Wired
