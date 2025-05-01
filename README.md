@@ -12,13 +12,11 @@
 
 > «Code is a tool to build the future, one line at a time.»
 
-```info
-⌬ Name: NKTKLN
-⌬ Status: Online in the Wired
-⌬ Focus: Working on my projects and learning new technologies
-⌬ Skills: Python, Docker, Linux
-⌬ Location: Moscow, Russia
-```
+**⌬ Name**: NKTKLN </br>
+**⌬ Status**: Online in the Wired </br>
+**⌬ Focus**: Working on my projects and learning new technologies </br>
+**⌬ Skills**: Python, Docker, Linux </br>
+**⌬ Location**: Moscow, Russia </br>
 
 ### 「 Contacts 」
 
