@@ -2,8 +2,10 @@
   <img src="src/sakura.png" alt="ascii sakura" width="600" />
 </div>
 
+<br>
+
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:F69ABF,100:EB7FA9&height=3&section=footer"/>
+  <img src="src/separator.svg" alt="separator" width="100%"/>
 </p>
 
 ### 「 About me 」
@@ -24,7 +26,7 @@
 - **Email**: [nktkln@nktkln.com](mailto:nktkln@nktkln.com)
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:F69ABF,100:EB7FA9&height=3&section=footer"/>
+  <img src="src/separator.svg" alt="separator" width="100%"/>
 </p>
 
 <p align="center">Thank you for visiting! 🌸</p>
