@@ -14,6 +14,12 @@ build/
 dist/
 
 # ========================
+# Temporary Files
+# ========================
+tmp/
+tmp.*
+
+# ========================
 # Node modules / JS tools
 # ========================
 node_modules/

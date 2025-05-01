@@ -58,16 +58,6 @@
 
 ---
 
-# new design
-
-https://github.com/DenverCoder1/readme-typing-svg
-
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Code+is+a+tool+to+build+the+future+one+line+at+a+time.](https://git.io/typing-svg)
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Code+is+a+tool+to+build+the+future%2C+one+line+at+a+time.)](https://git.io/typing-svg)
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&multiline=true&width=435&height=60&lines=Code+is+a+tool+to+build+the+future%2C;one+line+at+a+time.)](https://git.io/typing-svg)
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&vCenter=true&multiline=true&width=435&height=60&lines=Code+is+a+tool+to+build+the+future%2C;one+line+at+a+time.)](https://git.io/typing-svg)
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&multiline=true&repeat=false&width=435&height=60&lines=Code+is+a+tool+to+build+the+future%2C;one+line+at+a+time.)](https://git.io/typing-svg)
-
 Skills
 
 [![My Skills](https://skillicons.dev/icons?i=py,go)](https://skillicons.dev)
@@ -98,7 +88,9 @@ Skills
 
 ## 🌐 Контакты  
 - [![Website](https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://nktkln.com)  
-- [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/NKTKLN)  
+
+
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/NKTKLN)  
 
 ---
 
