@@ -2,8 +2,6 @@
   <img src="src/sakura.png" alt="ascii sakura" width="600" />
 </div>
 
-<br>
-
 <p align="center">
   <img src="src/separator.svg" alt="separator" width="100%"/>
 </p>
