@@ -18,7 +18,7 @@
 
 ### 「 Contacts 」
 
-- **Telegram**: [@NKTKLN](https://t.me/NKTKLN)
+- **Telegram**: [@NKTKLN_Work](https://t.me/NKTKLN_Work)
 - **Email**: [nktkln@nktkln.com](mailto:nktkln@nktkln.com)
 
 <p align="center">
