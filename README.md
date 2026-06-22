@@ -11,10 +11,18 @@
 > «Code is a tool to build the future, one line at a time.»
 
 **⌬ Name**: NKTKLN </br>
-**⌬ Status**: Online in the Wired </br>
-**⌬ Focus**: Working on my projects and learning new technologies </br>
-**⌬ Skills**: Python, Docker, Linux </br>
+**⌬ Focus**: Tabular ML, ML-algorithms from scratch, LLM integration </br>
+**⌬ Class**: Junior ML Engineer / console cowboy </br>
 **⌬ Location**: Moscow, Russia </br>
+
+### 「 Skills 」
+
+**❯ languages** &nbsp; Python · SQL · Go </br>
+**❯ ml/ai** &nbsp; scikit-learn · XGBoost · CatBoost · LightGBM · Optuna · vector search · LLM integration </br>
+**❯ data** &nbsp; pandas · NumPy · SciPy · Matplotlib · Streamlit </br>
+**❯ backend** &nbsp; FastAPI · SQLAlchemy 2.0 · Pydantic v2 · Celery </br>
+**❯ storage** &nbsp; PostgreSQL · Redis · MongoDB · DuckDB · MinIO </br>
+**❯ devops** &nbsp; Docker · CI/CD · Linux · uv · ruff · pytest </br>
 
 ### 「 Contacts 」
 
