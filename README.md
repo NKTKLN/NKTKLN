@@ -21,7 +21,7 @@
 **⌬ ML/AI**: scikit-learn · XGBoost · CatBoost · LightGBM · Optuna · vector search · LLM integration </br>
 **⌬ Data**: pandas · NumPy · SciPy · Matplotlib · Streamlit </br>
 **⌬ Backend**: FastAPI · SQLAlchemy 2.0 · Pydantic v2 · Celery </br>
-**⌬ Storage**: PostgreSQL · Redis · MongoDB · DuckDB · MinIO </br>
+**⌬ Storage**: PostgreSQL · Redis · MongoDB · MinIO </br>
 **⌬ DevOps**: Docker · CI/CD · Linux · uv · ruff · pytest </br>
 
 ### 「 Contacts 」
