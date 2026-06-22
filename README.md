@@ -8,11 +8,11 @@
 
 ### 「 About me 」
 
-> «Code is a tool to build the future, one line at a time.»
+> «Data has a memory. Models have ghosts.»
 
 **⌬ Name**: NKTKLN </br>
 **⌬ Focus**: Tabular ML, ML-algorithms from scratch, LLM integration </br>
-**⌬ Class**: Junior ML Engineer / console cowboy </br>
+**⌬ Class**: Junior ML Engineer </br>
 **⌬ Location**: Moscow, Russia </br>
 
 ### 「 Skills 」
