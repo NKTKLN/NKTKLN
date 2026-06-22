@@ -6,9 +6,9 @@
   <img src="src/separator.svg" alt="separator" width="100%"/>
 </p>
 
-### 「 About me 」
-
 > «Data has a memory. Models have ghosts.»
+
+### 「 About me 」
 
 **⌬ Name**: NKTKLN </br>
 **⌬ Focus**: Tabular ML, ML-algorithms from scratch, LLM integration </br>
