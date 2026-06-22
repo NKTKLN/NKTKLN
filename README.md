@@ -17,12 +17,12 @@
 
 ### 「 Skills 」
 
-**❯ languages** &nbsp; Python · SQL · Go </br>
-**❯ ml/ai** &nbsp; scikit-learn · XGBoost · CatBoost · LightGBM · Optuna · vector search · LLM integration </br>
-**❯ data** &nbsp; pandas · NumPy · SciPy · Matplotlib · Streamlit </br>
-**❯ backend** &nbsp; FastAPI · SQLAlchemy 2.0 · Pydantic v2 · Celery </br>
-**❯ storage** &nbsp; PostgreSQL · Redis · MongoDB · DuckDB · MinIO </br>
-**❯ devops** &nbsp; Docker · CI/CD · Linux · uv · ruff · pytest </br>
+**⌬ Languages**: Python · SQL · Go </br>
+**⌬ ML/AI**: scikit-learn · XGBoost · CatBoost · LightGBM · Optuna · vector search · LLM integration </br>
+**⌬ Data**: pandas · NumPy · SciPy · Matplotlib · Streamlit </br>
+**⌬ Backend**: FastAPI · SQLAlchemy 2.0 · Pydantic v2 · Celery </br>
+**⌬ Storage**: PostgreSQL · Redis · MongoDB · DuckDB · MinIO </br>
+**⌬ DevOps**: Docker · CI/CD · Linux · uv · ruff · pytest </br>
 
 ### 「 Contacts 」
 
