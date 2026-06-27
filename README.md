@@ -12,7 +12,7 @@
 
 **⌬ Name**: NKTKLN </br>
 **⌬ Focus**: Tabular ML, ML-algorithms from scratch, LLM integration </br>
-**⌬ Class**: Junior ML Engineer </br>
+**⌬ Class**: ML Engineer </br>
 **⌬ Location**: Moscow, Russia </br>
 
 ### 「 Skills 」
