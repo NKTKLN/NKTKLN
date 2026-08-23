@@ -96,8 +96,9 @@ values wrap under their own label.
 | `font_size` | `24` | px in the SVG; the terminal uses its own font |
 | `tracking` | `1.16` | `1.0` is the font's own advance, higher spaces glyphs out |
 | `leading` | `1.32` | line height in ems; the source art sat at `1.25` |
-| `padding` | `64` | px of air between the window frame and the art |
-| `bar_height` | `52` | px; the window buttons and its title scale with it |
+| `padding` | `64` | px of air left and right of the art |
+| `padding_y` | `30` | px above and below it |
+| `bar_height` | `38` | px; the window buttons and its title scale with it |
 | `duration` | `5.0` | seconds the growth takes, start to finish |
 | `seed` | `7` | fixes the order the blossoms open in |
 

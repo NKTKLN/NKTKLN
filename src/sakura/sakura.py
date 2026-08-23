@@ -49,7 +49,7 @@ def load(path=CONF_PATH):
     """Read profile.toml into the handful of globals the rest of this uses."""
     global CFG, NAME, TAGLINE, QUOTE, FOOTER, TITLE, BLOCKS
     global DARK, LIGHT, INK, SEED, DURATION
-    global FS, TRACK, LEAD, CW, CH, BASE, PAD_IN, BAR, DOT_R, TITLE_FS
+    global FS, TRACK, LEAD, CW, CH, BASE, PAD_IN, PAD_Y, BAR, DOT_R, TITLE_FS
 
     with open(path, 'rb') as fh:
         CFG = tomllib.load(fh)
@@ -70,6 +70,7 @@ def load(path=CONF_PATH):
     TRACK = float(r['tracking'])
     LEAD = float(r['leading'])
     PAD_IN = float(r['padding'])
+    PAD_Y = float(r['padding_y'])
     BAR = float(r['bar_height'])
     DOT_R = BAR * DOT_R_EM
     TITLE_FS = BAR * TITLE_EM
@@ -605,12 +606,12 @@ def render_svg(path, font_dir=None, light=False):
 
     content_w = COLS * CW
     win_w = content_w + 2 * PAD_IN
-    win_h = BAR + 2 * PAD_IN + (ROWS + len(card)) * CH
+    win_h = BAR + 2 * PAD_Y + (ROWS + len(card)) * CH
     w, h = win_w + 2 * OUT, win_h + 2 * OUT
 
     def place(r, c):
         return (OUT + PAD_IN + (c + 0.5) * CW,
-                OUT + BAR + PAD_IN + r * CH + BASE)
+                OUT + BAR + PAD_Y + r * CH + BASE)
 
     def at(i):
         return i / n * DURATION
