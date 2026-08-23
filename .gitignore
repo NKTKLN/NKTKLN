@@ -46,3 +46,9 @@ node_modules/
 # Custom ignore rules
 # ========================
 Todo.md
+
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]

@@ -1,0 +1,80 @@
+# Everything the card says and how the window looks. Edit, then re-render:
+#
+#   python3 sakura.py --render ../sakura-anim.svg
+#
+# The tree itself is not configurable here -- it is a recovered picture, and its
+# 29 colours belong to the original artwork (see art.py).
+
+title   = "nktkln@github: ~/sakura"   # shown in the terminal window's title bar
+name    = "NKTKLN"                    # the heading, drawn letterspaced
+tagline = "ML Engineer · Moscow"
+quote   = "«Data has a memory. Models have ghosts.»"
+footer  = "Thank you for visiting!"
+
+# Each [[block]] is one group of rows, separated from the next by a blank line.
+# Keys are the labels, values the text. " · " marks the item separator and is
+# tinted apart from the words around it. Long values wrap under their label.
+[[block]]
+Models  = "PyTorch · sklearn · boosting · from scratch"
+Serving = "Python · FastAPI · async SQLAlchemy · Go"
+Iron    = "Proxmox · Terraform · Ansible · ESP32 firmware"
+Habits  = "uv · ruff · pytest · conventional commits"
+
+[[block]]
+Web      = "nktkln.com"
+Telegram = "@NKTKLN_Work"
+Email    = "nktkln.dev@gmail.com"
+
+
+[render]
+font_size = 24     # px, in the SVG only; the terminal uses its own font
+tracking  = 1.16   # 1.0 is the font's own advance, higher spaces the glyphs out
+padding   = 64     # px of air between the window frame and the art
+duration  = 5.0    # seconds the growth takes, start to finish
+seed      = 7      # fixes the order the blossoms open in
+
+
+# GitHub's own canvas colours, so the card sits on a README as if it belonged.
+[dark]
+paper  = "#0d1117"
+bar    = "#161b22"
+seam   = "#21262d"
+frame  = "#30363d"
+title  = "#7d8590"
+sheen  = "#ffffff"
+shadow = "#010409"
+sheen_alpha  = 0.04
+shadow_alpha = 0.45
+dots = ["#e0708c", "#d8a657", "#7fc07f"]
+
+head     = "#e6edf3"   # the name, and the labels' weight partner
+tag      = "#ff8fb4"   # the tagline
+muted    = "#8b949e"   # quote and footer
+mark     = "#a8657f"   # the row marker
+label    = "#ff9ec0"
+value    = "#c9d1d9"
+dot      = "#484f58"   # the " · " between items
+rule     = "#3d444d"
+rule_dim = "#262c34"   # the dashed taper at each end of a rule
+
+[light]
+paper  = "#ffffff"
+bar    = "#f6f8fa"
+seam   = "#d1d9e0"
+frame  = "#d1d9e0"
+title  = "#59636e"
+sheen  = "#ffffff"
+shadow = "#59636e"
+sheen_alpha  = 0.9
+shadow_alpha = 0.16
+dots = ["#d98299", "#dfbe7c", "#93bf92"]
+
+head     = "#1f2328"
+tag      = "#bf3f68"
+muted    = "#59636e"
+mark     = "#c98aa6"
+label    = "#c2456e"
+value    = "#32383f"
+dot      = "#afb8c1"
+rule     = "#d1d9e0"
+rule_dim = "#eaeef2"
