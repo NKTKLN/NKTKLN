@@ -1,0 +1,48 @@
+# ========================
+# System files
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+*.thumbs.db
+
+# ========================
+# Build artifacts
+# ========================
+build/
+dist/
+
+# ========================
+# Temporary Files
+# ========================
+tmp/
+tmp.*
+
+# ========================
+# Node modules / JS tools
+# ========================
+node_modules/
+
+# ========================
+# IDEs / Editors
+# ========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ========================
+# Security & Secrets
+# ========================
+*.env
+*.env.*
+*.secret
+*.token
+*.key
+*.pem
+
+# ========================
+# Custom ignore rules
+# ========================
+Todo.md
