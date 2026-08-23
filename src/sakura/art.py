@@ -1,9 +1,11 @@
 """The recovered picture.
 
-Every glyph and all 29 colours were read back out of ``sakura-original.png``:
-the source image is a rendered ASCII grid, so it could be measured (70x125 px
+Every glyph and all 29 colours were read back out of the original artwork, an
+image that was itself a rendered ASCII grid: it could be measured (70x125 px
 cells) and each cell matched against a template. The reconstruction is exact --
-re-rendering this grid reproduces the original image pixel for pixel.
+re-rendering this grid reproduced that image pixel for pixel, which is why the
+image itself is no longer kept in the tree. It is in git history, at
+``git show 6f10f12:src/sakura-original.png``.
 
 ART    the characters, 26 rows of 62 columns
 COLOR  a palette index per cell, chr(33 + i); ' ' where the cell is blank

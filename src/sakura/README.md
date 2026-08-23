@@ -15,12 +15,14 @@ profile card beside it, either live in a terminal or baked into an animated SVG
 for a GitHub README. It is the whole profile page: nothing to serve, nothing to
 keep running.
 
-The tree is not generated. It was recovered from `../sakura-original.png`, which
-is itself a rendered ASCII grid — 70×125 px cells, sixteen distinct glyphs, 29
-colours — so every character and colour here is the original artwork's, read back
-rather than approximated. That constraint decides the rest: the growth may add
-limbs while it runs, but the last frame has to come out identical to the source
-image, so nothing is ever drawn where a blossom will not later cover it.
+The tree is not generated. It was recovered from the original artwork, which was
+itself a rendered ASCII grid — 70×125 px cells, sixteen distinct glyphs, 29
+colours — so every character and colour in `art.py` is that artwork's, read back
+rather than approximated. The reconstruction was exact, which is why the image is
+no longer kept here; `git log --diff-filter=D -- src/sakura-original.png` finds
+it. That constraint decides the rest: the growth may add limbs while it runs, but
+the last frame has to come out identical to the source, so nothing is ever drawn
+where a blossom will not later cover it.
 
 ## 📦 Dependencies
 
@@ -76,7 +78,7 @@ Everything the card says, and every colour that is not the tree's own, is in
 | Key | Default | What it is |
 | --- | --- | --- |
 | `title` | `nktkln@github: ~/sakura` | text in the window's title bar |
-| `name` | `NKTKLN` | the heading, drawn letterspaced |
+| `name` | `NKTKLN` | the card's heading |
 | `tagline` | `ML Engineer · Moscow` | one line under the name |
 | `quote` | `«Data has a memory…»` | the line under the tagline |
 | `footer` | `Thank you for visiting!` | last line, under the closing rule |
@@ -93,7 +95,9 @@ values wrap under their own label.
 | --- | --- | --- |
 | `font_size` | `24` | px in the SVG; the terminal uses its own font |
 | `tracking` | `1.16` | `1.0` is the font's own advance, higher spaces glyphs out |
+| `leading` | `1.32` | line height in ems; the source art sat at `1.25` |
 | `padding` | `64` | px of air between the window frame and the art |
+| `bar_height` | `52` | px; the window buttons and its title scale with it |
 | `duration` | `5.0` | seconds the growth takes, start to finish |
 | `seed` | `7` | fixes the order the blossoms open in |
 

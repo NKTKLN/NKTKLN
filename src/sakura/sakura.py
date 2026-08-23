@@ -39,7 +39,9 @@ POT_X = 31            # the pot's centre column: the axis the composition hangs 
 TRUNK_X = 31          # the trunk sits here, branches spread away from it
 CROWN = (6.0, 34.0)   # row/col the canopy blooms out from
 FADE = 0.18           # seconds a glyph takes to appear
-BAR = 42.0            # the terminal window's title bar
+CAP = 0.730           # JetBrains Mono cap height, in em
+DOT_R_EM = 0.155      # button radius, as a fraction of the bar's height
+TITLE_EM = 0.40       # title type, ditto -- so the two always stay in step
 OUT = 22.0            # room outside the window for its shadow
 
 
@@ -47,7 +49,7 @@ def load(path=CONF_PATH):
     """Read profile.toml into the handful of globals the rest of this uses."""
     global CFG, NAME, TAGLINE, QUOTE, FOOTER, TITLE, BLOCKS
     global DARK, LIGHT, INK, SEED, DURATION
-    global FS, TRACK, CW, CH, BASE, PAD_IN
+    global FS, TRACK, LEAD, CW, CH, BASE, PAD_IN, BAR, DOT_R, TITLE_FS
 
     with open(path, 'rb') as fh:
         CFG = tomllib.load(fh)
@@ -66,10 +68,14 @@ def load(path=CONF_PATH):
     SEED, DURATION = r['seed'], float(r['duration'])
     FS = float(r['font_size'])
     TRACK = float(r['tracking'])
+    LEAD = float(r['leading'])
     PAD_IN = float(r['padding'])
+    BAR = float(r['bar_height'])
+    DOT_R = BAR * DOT_R_EM
+    TITLE_FS = BAR * TITLE_EM
     CW = FS * 0.6 * TRACK   # cell advance; 0.6em is a monospace font's own step
-    CH = FS * 1.25          # line height. CH/CW lands on 1.80, the source was 1.79
-    BASE = 0.808 * CH       # baseline inside a cell, measured off the source png
+    CH = FS * LEAD          # line height
+    BASE = 0.808 * CH       # baseline inside a cell, measured off the source art
 
 
 load()
@@ -173,16 +179,11 @@ def _rows(pairs, width, indent=2, lab=None):
     return lines
 
 
-def _name(text, width):
-    """Letterspaced, so the name reads as a heading without any bracket around it."""
-    return _centre([(' '.join(text), 'head')], width)
-
-
 def build_card(width):
     """The card as span-lines: (text, ink key) runs, one list per line."""
     lab = max(len(label) for block in BLOCKS for label, _ in block)
     lines = [[], _rule(width), [],
-             _name(NAME, width),
+             _centre([(NAME, 'head')], width),
              _centre([(TAGLINE, 'tag')], width), [],
              _centre([(QUOTE, 'muted')], width), []]
     for i, block in enumerate(BLOCKS):
@@ -190,7 +191,7 @@ def build_card(width):
             lines.append([])
         lines += _rows(block, width, lab=lab)
     lines += [[], _rule(width), []]
-    lines += [_centre([(FOOTER, 'muted')], width), []]
+    lines += [_centre([(FOOTER, 'muted')], width)]
     return lines
 
 
@@ -526,8 +527,10 @@ def embed_font(path, chars):
     sub = subset.Subsetter(options=opts)
     sub.populate(text=''.join(sorted(chars)))
     sub.subset(font)
-    # fontTools stamps head with the build time; pin it so re-rendering the same
-    # config gives byte-identical output and does not churn the committed SVG
+    # fontTools stamps head with the build clock; pin it so the diff of a
+    # re-render is not dominated by a timestamp. The woff2 bytes can still vary
+    # slightly between runs -- that is inside fontTools, not here -- so the
+    # committed SVG is not bit-reproducible even though the picture is identical.
     font['head'].created = font['head'].modified = 3660249600   # 2020-01-01
     font.flavor = 'woff2'
     buf = io.BytesIO()
@@ -628,6 +631,7 @@ def render_svg(path, font_dir=None, light=False):
     css = ['text{font-family:JBM,ui-monospace,SFMono-Regular,Menlo,monospace;'
            'font-size:%.2fpx;text-anchor:middle;white-space:pre}' % FS,
            '.b{font-weight:700}',
+           '.t{font-size:%.2fpx}' % TITLE_FS,
            '@keyframes in{from{opacity:0}to{opacity:1}}',
            '@keyframes out{from{opacity:1}to{opacity:0}}',
            '.g{opacity:0;animation:in %.2fs ease-out both}' % FADE,
@@ -667,11 +671,13 @@ def render_svg(path, font_dir=None, light=False):
     out.append('<rect x="%.1f" y="%.1f" width="%.1f" height="1" fill="%s"/>'
                % (bx, by + BAR, win_w, theme['seam']))
     for j, dot in enumerate(theme['dots']):
-        out.append('<circle cx="%.1f" cy="%.1f" r="6" fill="%s"/>'
-                   % (bx + 26 + j * 21, by + BAR / 2, dot))
-    out.append('<text x="%.1f" y="%.1f" fill="%s" font-size="13" '
-               'font-family="JBM,monospace">%s</text>'
-               % (bx + win_w / 2, by + BAR / 2 + 4.9, theme['title'], TITLE))
+        out.append('<circle cx="%.1f" cy="%.1f" r="%.1f" fill="%s"/>'
+                   % (bx + 26 + j * DOT_R * 3.5, by + BAR / 2, DOT_R, dot))
+    # centred on the bar both ways: half the cap height puts the optical middle
+    # of the letters on the middle of the bar, which the baseline alone does not
+    out.append('<text class="t" x="%.1f" y="%.1f" fill="%s">%s</text>'
+               % (bx + win_w / 2, by + BAR / 2 + CAP * TITLE_FS / 2,
+                  theme['title'], _xml(TITLE)))
     out.append('</g>')
     # a hairline inside the edge reads as glass; the frame itself sits outside it
     out.append('<rect x="%.1f" y="%.1f" width="%.1f" height="%.1f" rx="13" '

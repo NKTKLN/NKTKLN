@@ -6,7 +6,7 @@
 # 29 colours belong to the original artwork (see art.py).
 
 title   = "nktkln@github: ~/sakura"   # shown in the terminal window's title bar
-name    = "NKTKLN"                    # the heading, drawn letterspaced
+name    = "NKTKLN"                    # the card's heading
 tagline = "ML Engineer · Moscow"
 quote   = "«Data has a memory. Models have ghosts.»"
 footer  = "Thank you for visiting!"
@@ -29,7 +29,9 @@ Email    = "nktkln.dev@gmail.com"
 [render]
 font_size = 24     # px, in the SVG only; the terminal uses its own font
 tracking  = 1.16   # 1.0 is the font's own advance, higher spaces the glyphs out
-padding   = 64     # px of air between the window frame and the art
+leading   = 1.32   # line height in ems; the source art sat at 1.25
+padding    = 64    # px of air between the window frame and the art
+bar_height = 52    # px; the window buttons and its title scale with it
 duration  = 5.0    # seconds the growth takes, start to finish
 seed      = 7      # fixes the order the blossoms open in
 
