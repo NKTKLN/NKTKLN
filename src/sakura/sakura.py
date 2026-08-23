@@ -18,6 +18,7 @@ import colorsys
 import heapq
 import math
 import os
+from pathlib import Path
 import random
 import shutil
 import sys
@@ -27,8 +28,7 @@ import tomllib
 
 from art import ART, COLOR, COLS, LAYER, PALETTE, ROWS
 
-CONF_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                         'profile.toml')
+CONF_PATH = Path(__file__).with_name('profile.toml')
 
 BOLD = frozenset(('head', 'label'))          # ink keys drawn at weight 700
 BULLET = '\u25b8'      # a small marker that points at the label
@@ -51,7 +51,7 @@ def load(path=CONF_PATH):
     global DARK, LIGHT, INK, SEED, DURATION
     global FS, TRACK, LEAD, CW, CH, BASE, PAD_IN, PAD_Y, BAR, DOT_R, TITLE_FS
 
-    with open(path, 'rb') as fh:
+    with Path(path).open('rb') as fh:
         CFG = tomllib.load(fh)
 
     NAME = CFG['name']
@@ -113,7 +113,7 @@ RGB = tuple(unhex(c) for c in PALETTE)
 _RGB_CACHE = {}
 
 
-def RGB_OF(hexc):
+def rgb_of(hexc):
     if hexc not in _RGB_CACHE:
         _RGB_CACHE[hexc] = unhex(hexc)
     return _RGB_CACHE[hexc]
@@ -209,13 +209,20 @@ def _flatten(spans):
     return [(ch, colour) for text, colour in spans for ch in text]
 
 
+def _card_timeline(card):
+    """Flatten card lines and assign a reveal cost to each one."""
+    cells = [_flatten(line) for line in card]
+    costs = [max(len(line), 6) for line in cells]
+    return cells, costs
+
+
 def _paint_chars(chars, paint, glow_from):
     out, last = [], None
     for i, (ch, key) in enumerate(chars):
         if key is None or not paint:
             out.append(ch)
             continue
-        rgb = RGB_OF(INK[key])
+        rgb = rgb_of(INK[key])
         if i >= glow_from:
             rgb = lighten(rgb, 0.5)
         esc = ('\x1b[1m' if key in BOLD else '\x1b[22m') + paint(*rgb)
@@ -240,8 +247,7 @@ def card_frame(cells, costs, budget, paint, glow):
 
 
 def reveal_card(card, paint, speed):
-    cells = [_flatten(l) for l in card]
-    costs = [max(len(c), 6) for c in cells]     # blank lines still take a beat
+    cells, costs = _card_timeline(card)
     total = sum(costs)
     step = max(4, int(round(16 * speed)))
     delay = 0.035 / speed
@@ -255,8 +261,8 @@ def reveal_card(card, paint, speed):
 
 
 def still_card(card, paint):
-    cells = [_flatten(l) for l in card]
-    costs = [len(c) for c in cells]
+    cells, _ = _card_timeline(card)
+    costs = [len(line) for line in cells]
     sys.stdout.write('\n'.join(
         (PAD + ln).rstrip()
         for ln in card_frame(cells, costs, sum(costs), paint, 0)) + '\n')
@@ -410,7 +416,7 @@ def render(shown, limbs, age, paint):
                 rgb = RGB[ord(COLOR[r][c]) - 33]
             elif (r, c) in limbs:
                 ch, hexc = GHOSTS[(r, c)]
-                rgb = RGB_OF(hexc)
+                rgb = rgb_of(hexc)
             else:
                 tail_ws += 1
                 continue
@@ -539,7 +545,7 @@ def embed_font(path, chars):
     return base64.b64encode(buf.getvalue()).decode('ascii')
 
 
-def _card_cells(card):
+def _card_glyphs(card):
     """Card characters as (row, col, char, ink key), spaces dropped."""
     out = []
     for i, line in enumerate(card):
@@ -572,10 +578,8 @@ def render_svg(path, font_dir=None, light=False):
                 buried[(r, c)] = i
 
     # the card unrolls on the same clock as the tree
-    chars = _card_cells(card)
-    costs = []
-    for i, line in enumerate(card):
-        costs.append(max(len(''.join(t for t, _ in line)), 6))
+    chars = _card_glyphs(card)
+    _, costs = _card_timeline(card)
     total = sum(costs)
     starts, run = [], 0
     for cost in costs:
@@ -707,7 +711,7 @@ def render_svg(path, font_dir=None, light=False):
         out.append(''.join(parts))
 
     out.append('</svg>')
-    with open(path, 'w') as fh:
+    with Path(path).open('w', encoding='utf-8') as fh:
         fh.write('\n'.join(out) + '\n')
     return w, h, os.path.getsize(path)
 
@@ -754,8 +758,7 @@ def main():
         sys.stderr.write('terminal is %d columns, the tree needs %d\n' % (width, COLS))
     PAD = ' ' * max(0, (width - 1) // 2 - POT_X)
 
-    cells = [_flatten(l) for l in card] if card else []
-    costs = [max(len(c), 6) for c in cells]
+    cells, costs = _card_timeline(card) if card else ([], [])
     # both blocks share the frame only if the terminal is tall enough to hold them
     together = bool(cells) and height >= ROWS + len(cells) + 1
 
